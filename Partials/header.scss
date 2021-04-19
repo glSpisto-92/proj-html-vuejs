@@ -59,7 +59,35 @@
 .hero{
   background-image: url('../img/hero.jpg');
   height: calc(100vh - 120px);
+  // height: 100vh;
   background-size: cover;
   position: relative;
 
+  & .hero_info_top{
+   background-image: url('../img/impronte.png');
+   background-repeat: repeat;
+   background-size: cover;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   z-index: 100;
+   color: #fff;
+   background: #cacace;
+  }
+  & .hero_info_bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #cacace;
+  }
 }

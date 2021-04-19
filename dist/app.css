@@ -18,6 +18,17 @@
   outline: none;
 }
 
+.btn {
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
 .main_nav_top, .second_nav_top {
   font-family: "Roboto", sans-serif;
   height: 60px;
@@ -69,11 +80,12 @@
 
 .hero {
   background-image: url("../img/hero.jpg");
-  height: calc(100vh - 120px);
+  height: 100vh;
   background-size: cover;
   position: relative;
 }
 .hero .hero_info_top {
+  font-family: "Roboto", sans-serif;
   background-image: url("../img/impronte.png");
   background-repeat: repeat;
   background-size: cover;
@@ -81,24 +93,68 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  z-index: 100;
   color: #fff;
   background: #cacace;
 }
 .hero .hero_info_bottom {
+  font-family: "Roboto", sans-serif;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #cacace;
+}
+.hero .hero_info_bottom img {
+  width: 180px;
+  position: absolute;
+  bottom: 0;
+  left: 420px;
+}
+.hero .hero_info_bottom span {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+.hero .hero_info_bottom span a {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 20px;
+}
+.hero .hero_info_bottom span a:hover {
+  color: #fff;
+}
+.hero .hero_text {
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+.hero .hero_text small {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Goudy Bookletter 1911", serif;
+  letter-spacing: 1;
+}
+.hero .hero_text h2 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+  font-family: "Goudy Bookletter 1911", serif;
+  line-height: 1.5;
+}
+.hero .hero_text button {
+  background: #fff;
+  font-size: 14px;
 }
 
 * {

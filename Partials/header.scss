@@ -58,12 +58,13 @@
 
 .hero{
   background-image: url('../img/hero.jpg');
-  height: calc(100vh - 120px);
-  // height: 100vh;
+  // height: calc(100vh - 120px);
+  height: 100vh;
   background-size: cover;
   position: relative;
 
   & .hero_info_top{
+    font-family: 'Roboto', sans-serif;
    background-image: url('../img/impronte.png');
    background-repeat: repeat;
    background-size: cover;
@@ -71,23 +72,69 @@
    top: 0;
    left: 0;
    right: 0;
-   height: 50px;
+   height: 60px;
    display: flex;
    align-items: center;
    justify-content: space-around;
-   z-index: 100;
    color: #fff;
    background: #cacace;
   }
   & .hero_info_bottom{
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #cacace;
+
+    img {
+      width: 180px;
+      position: absolute;
+      bottom: 0;
+      left: 420px;
+    }
+    span{
+      font-size: $fontSmall;
+      color: #fff;
+      font-weight: 500;
+
+      a{
+        text-decoration: underline;
+        color: rgba(255,255,255,0.7);
+        margin-left: 20px;
+
+        &:hover{
+          color: #fff;
+        }
+
+      }
+    }
+  }
+  .hero_text{
+    @include image_centered;
+    width: 30%;
+
+    small{
+      font-weight: bold;
+      color: #fff;
+      font-size: $fontSmall;
+      font-family: 'Goudy Bookletter 1911', serif;
+      letter-spacing: 1;
+    }
+    h2{
+      font-weight: bold;
+      font-size: $fontLarge;
+      color: #fff;
+      font-family: 'Goudy Bookletter 1911', serif;
+      line-height: 1.5;
+    }
+    button{
+      background: #fff;
+      font-size: 14px;
+    }
   }
 }

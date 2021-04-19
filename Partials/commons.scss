@@ -20,3 +20,23 @@
     outline: none;
   }
 }
+
+// mixins
+@mixin image_centered {
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// buttons
+.btn{
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-size: $fontSmall;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}

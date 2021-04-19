@@ -9,8 +9,18 @@
   box-sizing: border-box;
 }
 
+a, li{
+  list-style: none;
+  text-decoration: none;
+
+}
+
 @for $i from 1 through 5 {
   .mt-#{15 * $i} {
     margin-top: 15px * $i;
   }
+}
+
+hr{
+  border: 1px solid #e6e6e6;
 }

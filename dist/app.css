@@ -1,1 +1,72 @@
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
+.containerLarge {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.inputStyle {
+  border-radius: 15px;
+  padding: 8px;
+  background: #e6e6e6;
+  border: none;
+}
+.inputStyle:focus {
+  outline: none;
+}
+
+.main_nav_top, .second_nav_top {
+  font-family: "Roboto", sans-serif;
+  max-height: 80px;
+  display: flex;
+}
+
+.main_nav_top {
+  justify-content: space-between;
+}
+
+.main_nav_top_content_left, .main_nav_top_content_right {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.main_nav_top_content_left img, .main_nav_top_content_right img {
+  width: 230px;
+}
+.main_nav_top_content_left input, .main_nav_top_content_right input {
+  width: 250px;
+}
+.main_nav_top_content_left span, .main_nav_top_content_right span {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mt-75 {
+  margin-top: 75px;
+}

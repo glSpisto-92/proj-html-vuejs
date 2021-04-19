@@ -1,0 +1,22 @@
+// containers
+.container{
+  max-width: $containerMedium;
+  margin: 0 auto;
+
+}
+.containerLarge{
+  max-width: $containerLarge;
+  margin: 0 auto;
+}
+
+// inputs
+.inputStyle{
+  border-radius: 15px;
+  padding: 8px;
+  background: #e6e6e6;
+  border: none;
+
+  &:focus{
+    outline: none;
+  }
+}

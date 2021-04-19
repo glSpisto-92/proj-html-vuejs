@@ -1,0 +1,26 @@
+.main_nav_top, .second_nav_top{
+  font-family: 'Roboto', sans-serif;
+  max-height: 80px;
+  display: flex;
+}
+.main_nav_top{
+  justify-content: space-between;
+}
+
+.main_nav_top_content_left, .main_nav_top_content_right{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  & img{
+    width: 230px;
+  }
+  & input{
+    width: 250px;
+  }
+  & span{
+    font-size: 14px;
+  }
+}

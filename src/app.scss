@@ -1,1 +1,16 @@
+@import "partials/variables";
+@import "partials/commons";
+@import "partials/header";
+@import "partials/main";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@for $i from 1 through 5 {
+  .mt-#{15 * $i} {
+    margin-top: 15px * $i;
+  }
+}

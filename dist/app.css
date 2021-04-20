@@ -49,7 +49,7 @@
 .main_nav_top_content_left, .main_nav_top_content_right {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 0;
 }
@@ -63,6 +63,7 @@
 }
 .main_nav_top_content_left span, .main_nav_top_content_right span {
   font-size: 14px;
+  margin-left: 40px;
 }
 .main_nav_top_content_left .main_nav_top_content_right_icons img, .main_nav_top_content_right .main_nav_top_content_right_icons img {
   width: 25px;
@@ -119,6 +120,7 @@
   line-height: 60px;
 }
 .hero .hero_info_bottom {
+  background-image: url("../img/impronte.png");
   font-family: "Roboto", sans-serif;
   position: absolute;
   bottom: 0;
@@ -136,17 +138,17 @@
   bottom: 0;
   left: 420px;
 }
-.hero .hero_info_bottom span {
+.hero .hero_info_bottom p {
   font-size: 20px;
   color: #fff;
   font-weight: 500;
 }
-.hero .hero_info_bottom span a {
+.hero .hero_info_bottom p a {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.7);
   margin-left: 20px;
 }
-.hero .hero_info_bottom span a:hover {
+.hero .hero_info_bottom p a:hover {
   color: #fff;
 }
 .hero .hero_text {
@@ -168,7 +170,6 @@
   font-size: 48px;
   color: #fff;
   font-family: "Goudy Bookletter 1911", serif;
-  line-height: 1.5;
   letter-spacing: 1px;
 }
 .hero .hero_text button {
@@ -193,12 +194,25 @@
   box-shadow: 1px 0px 13px 3px #707070;
 }
 .hero .folder {
-  top: 15px;
+  top: 25px;
 }
 .hero .shopping_cart {
-  top: 90px;
+  top: 100px;
 }
 
+@media screen and (max-width: 992px) {
+  .main_nav_top {
+    display: block;
+    height: 120px;
+  }
+  .main_nav_top .main_nav_top_content_left, .main_nav_top .main_nav_top_content_right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .main_nav_top .main_nav_top_content_left > img, .main_nav_top .main_nav_top_content_right > img {
+    padding-left: 20px;
+  }
+}
 .categories_text {
   text-align: center;
   max-width: 35%;
@@ -230,7 +244,6 @@
 }
 
 .section_shop_2 {
-  height: 600px;
   display: flex;
 }
 .section_shop_2 #special {
@@ -295,6 +308,37 @@
 .banner_new_arrivals .banner_new_arrivals_content button:hover {
   background: #3d6f42;
   color: #fff;
+}
+
+.bestseller_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bestseller_section h3 {
+  color: #3d6f42;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+.bestseller_section h2 {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 36px;
+}
+
+.bestseller_section_arcticle {
+  display: flex;
+  justify-content: center;
+}
+.bestseller_section_arcticle .box_shop {
+  margin: 15px;
+}
+.bestseller_section_arcticle .box_shop img {
+  width: 300px;
+}
+.bestseller_section_arcticle .box_shop p {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 * {

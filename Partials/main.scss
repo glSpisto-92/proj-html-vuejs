@@ -19,15 +19,15 @@
 .section_shop_1{
   display: flex;
 
-  & .box_shop{
+  .box_shop{
     width: calc(100% / 4);
     margin: 10px;
 
-    & img{
+    img{
       width: 100%;
     }
 
-    & p{
+    p{
       text-align: center;
       margin-top: 10px;
       font-size: $fontMedium;
@@ -37,14 +37,13 @@
 
 // sezione shop 2
 .section_shop_2{
-  height: 600px;
   display: flex;
 
   #special{
     margin: 0 10px;
   }
 
-  & .box_shop{
+  .box_shop{
     width: calc(100% / 3);
     background-image: url('../img/impronte.png');
     background-color: rgb(30, 49, 32);
@@ -104,6 +103,40 @@
     button:hover{
       background: #3d6f42;
       color: #fff;
+    }
+  }
+}
+
+.bestseller_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3{
+    color: #3d6f42;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+  }
+  h2{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: $fontMediumL;
+  }
+}
+
+.bestseller_section_arcticle{
+  display: flex;
+  justify-content: center;
+
+  .box_shop{
+    margin: 15px;
+
+    img{
+      width: 300px;
+    }
+    p{
+      margin-top: 15px;
+      font-size: $fontSmall;
+      text-align: center;
     }
   }
 }

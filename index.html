@@ -20,12 +20,11 @@
     <title>Pet Supplies</title>
   </head>
   <body>
+    <div class="wrapper" id="app">
   <!-- header( nav-bar, search e hero ) -->
     <header>
       <!-- nav bar principali -->
-      <div class="wrapper">
         <!-- prima nav-bar  -->
-        <div class="wrapper_main_nav">
           <div class="main_nav_top containerLarge">
             <!-- prima nav-bar (parte sinistra) -->
             <div class="main_nav_top_content_left">
@@ -36,31 +35,27 @@
             <div class="main_nav_top_content_right">
               <span><small></small><strong>Questions? </strong>Call us: 0823 40-33-33</span>
               <div class="main_nav_top_content_right_icons">
-                <a href="#"><i class="far fa-folder-open"></i></a>
-                <a href="#"<i class="far fa-user"></i></a>
+                <a href="#"><img src="img/shopping-bag.png" alt=""></a>
+                <a href="#"><img src="img/user.png" alt=""></a>
               </div>
             </div>
           </div>
-        </div>
         <hr>
         <!-- seconda nav-bar top -->
         <div class="second_nav_top">
-          <ul>
-            <li><a href="#">ciao <i class="fas fa-angle-down"></i></a></li>
-            <li><a href="#">ciao <i class="fas fa-angle-down"></i></a></li>
-            <li><a href="#">ciao</i></a></li>
-            <li><a href="#">ciao belli</i></a></li>
-            <li><a href="#">ciao</i></a></li>
-            <li><a href="#">ciao a tutti</i></a></li>
+          <ul v-for="section in navMenu">
+            <li><a href="#">{{section}} <i class="fas fa-angle-down"></i></a></li>
           </ul>
         </div>
         <!-- HERO/JUMBOTRON -->
         <div class="hero">
           <!-- info hero top -->
           <div class="hero_info_top">
+          <div class="hero_info_top_text container">
             <span>International shipping service</span>
             <span>See our store hours and services</span>
             <span>We price match to give you the best deals</span>
+          </div>
           </div>
           <!-- HERO (testo centrale) -->
           <div class="hero_text containerLarge">
@@ -83,7 +78,6 @@
             </div>
           </div>
         </div>
-    </div>
     </header>
     <!-- MAIN (sezioni shop/categorie e informazioni) -->
     <main>
@@ -92,6 +86,7 @@
         <p class="mt-15">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
       </div>
     </main>
+  </div>
 
 
 

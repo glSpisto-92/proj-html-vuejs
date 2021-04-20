@@ -9,9 +9,9 @@
 }
 
 .inputStyle {
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 10px;
-  background: #e6e6e6;
+  background: rgba(31, 63, 35, 0.055);
   border: none;
 }
 .inputStyle:focus {
@@ -31,7 +31,7 @@
 
 .main_nav_top, .second_nav_top {
   font-family: "Roboto", sans-serif;
-  height: 70px;
+  height: 80px;
   display: flex;
 }
 
@@ -51,13 +51,14 @@
 }
 .main_nav_top_content_left input, .main_nav_top_content_right input {
   width: 350px;
+  height: 40px;
 }
 .main_nav_top_content_left span, .main_nav_top_content_right span {
   font-size: 14px;
 }
-.main_nav_top_content_left .main_nav_top_content_right_icons a, .main_nav_top_content_right .main_nav_top_content_right_icons a {
-  margin-left: 5px;
-  color: #000;
+.main_nav_top_content_left .main_nav_top_content_right_icons img, .main_nav_top_content_right .main_nav_top_content_right_icons img {
+  width: 25px;
+  margin-left: 10px;
 }
 
 .second_nav_top {
@@ -82,7 +83,7 @@
   color: #000;
 }
 .second_nav_top ul a:not(last-child) {
-  margin-right: 25px;
+  margin-right: 30px;
 }
 
 .hero {
@@ -102,11 +103,14 @@
   left: 0;
   right: 0;
   height: 60px;
-  display: flex;
   align-items: center;
-  justify-content: space-around;
   color: #fff;
   background: #1e3120;
+}
+.hero .hero_info_top .hero_info_top_text {
+  display: flex;
+  justify-content: space-between;
+  line-height: 60px;
 }
 .hero .hero_info_bottom {
   font-family: "Roboto", sans-serif;

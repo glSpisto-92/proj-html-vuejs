@@ -35,21 +35,8 @@
   display: flex;
 }
 
-.wrapper_main_nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  border-bottom: 1px solid #e6e6e6;
-  background: #fff;
-}
-
 .main_nav_top {
   justify-content: space-between;
-}
-
-.second_nav_top {
-  margin-top: 65px;
 }
 
 .main_nav_top_content_left, .main_nav_top_content_right {
@@ -74,7 +61,14 @@
 }
 
 .second_nav_top {
+  font-family: "Roboto", sans-serif;
   justify-content: center;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 100;
 }
 .second_nav_top ul {
   display: flex;

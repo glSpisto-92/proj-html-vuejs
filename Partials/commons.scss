@@ -33,7 +33,6 @@
 .btn{
   border-radius: 20px;
   padding: 12px 25px;
-  font-size: $fontSmall;
   font-weight: bold;
   background: transparent;
   border: none;
@@ -43,5 +42,9 @@
   &.color{
     background-color: #3d6f42;
     color: #fff;
+  }
+  &.color2{
+    background-color: #fff;
+    color: #000;
   }
 }

@@ -15,6 +15,7 @@
   }
 }
 
+// sezione shop 1
 .section_shop_1{
   display: flex;
 
@@ -34,6 +35,7 @@
   }
 }
 
+// sezione shop 2
 .section_shop_2{
   height: 600px;
   display: flex;
@@ -72,6 +74,36 @@
     &:hover{
       transform: scale(1.1);
       filter: brightness(120%);
+    }
+  }
+}
+
+// sezione nuovi arrivi (hero/banner)
+.banner_new_arrivals{
+  height: 500px;
+  background-image: url('../img/banner2.jpg');
+  background-size: cover;
+  position: relative;
+
+  .banner_new_arrivals_content{
+    @include image_centered;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+
+    p{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+    h3{
+      font-family: 'Goudy Bookletter 1911', serif;
+      letter-spacing: 2px;
+      font-size: $fontLarge;
+    }
+    button:hover{
+      background: #3d6f42;
+      color: #fff;
     }
   }
 }

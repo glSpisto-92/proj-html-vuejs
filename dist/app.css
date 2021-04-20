@@ -21,7 +21,6 @@
 .btn {
   border-radius: 20px;
   padding: 12px 25px;
-  font-size: 20px;
   font-weight: bold;
   background: transparent;
   border: none;
@@ -31,6 +30,10 @@
 .btn.color {
   background-color: #3d6f42;
   color: #fff;
+}
+.btn.color2 {
+  background-color: #fff;
+  color: #000;
 }
 
 .main_nav_top, .second_nav_top {
@@ -52,7 +55,7 @@
 }
 .main_nav_top_content_left img, .main_nav_top_content_right img {
   width: 230px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .main_nav_top_content_left input, .main_nav_top_content_right input {
   width: 350px;
@@ -262,6 +265,36 @@
 .section_shop_2 .box_shop:hover {
   transform: scale(1.1);
   filter: brightness(120%);
+}
+
+.banner_new_arrivals {
+  height: 500px;
+  background-image: url("../img/banner2.jpg");
+  background-size: cover;
+  position: relative;
+}
+.banner_new_arrivals .banner_new_arrivals_content {
+  position: absolute;
+  left: 32%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  color: #fff;
+  text-align: center;
+}
+.banner_new_arrivals .banner_new_arrivals_content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.banner_new_arrivals .banner_new_arrivals_content h3 {
+  font-family: "Goudy Bookletter 1911", serif;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+.banner_new_arrivals .banner_new_arrivals_content button:hover {
+  background: #3d6f42;
+  color: #fff;
 }
 
 * {

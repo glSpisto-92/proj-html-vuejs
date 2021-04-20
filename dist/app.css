@@ -10,7 +10,7 @@
 
 .inputStyle {
   border-radius: 15px;
-  padding: 8px;
+  padding: 10px;
   background: #e6e6e6;
   border: none;
 }
@@ -20,7 +20,7 @@
 
 .btn {
   border-radius: 20px;
-  padding: 10px 25px;
+  padding: 12px 25px;
   font-size: 20px;
   font-weight: bold;
   background: transparent;
@@ -31,18 +31,31 @@
 
 .main_nav_top, .second_nav_top {
   font-family: "Roboto", sans-serif;
-  height: 60px;
+  height: 70px;
   display: flex;
+}
+
+.wrapper_main_nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
 }
 
 .main_nav_top {
   justify-content: space-between;
 }
 
+.second_nav_top {
+  margin-top: 65px;
+}
+
 .main_nav_top_content_left, .main_nav_top_content_right {
-  width: 45%;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0;
 }
@@ -50,7 +63,7 @@
   width: 230px;
 }
 .main_nav_top_content_left input, .main_nav_top_content_right input {
-  width: 260px;
+  width: 350px;
 }
 .main_nav_top_content_left span, .main_nav_top_content_right span {
   font-size: 14px;
@@ -87,8 +100,9 @@
 .hero .hero_info_top {
   font-family: "Roboto", sans-serif;
   background-image: url("../img/impronte.png");
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-size: cover;
+  background-position: center top;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,7 +112,7 @@
   align-items: center;
   justify-content: space-around;
   color: #fff;
-  background: #cacace;
+  background: #1e3120;
 }
 .hero .hero_info_bottom {
   font-family: "Roboto", sans-serif;
@@ -110,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #cacace;
+  background: #1e3120;
 }
 .hero .hero_info_bottom img {
   width: 180px;
@@ -155,6 +169,28 @@
 .hero .hero_text button {
   background: #fff;
   font-size: 14px;
+}
+.hero .hero_text button:hover {
+  background: #3d6f42;
+  color: #fff;
+}
+.hero .folder, .hero .shopping_cart {
+  position: fixed;
+  right: 15px;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 8px;
+  margin-top: 140px;
+  cursor: pointer;
+}
+.hero .folder {
+  top: 15px;
+}
+.hero .shopping_cart {
+  top: 90px;
 }
 
 * {

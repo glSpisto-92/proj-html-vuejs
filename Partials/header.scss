@@ -2,18 +2,29 @@
   //HEADER (nav bars)
 .main_nav_top, .second_nav_top{
   font-family: 'Roboto', sans-serif;
-  height: 60px;
+  height: 70px;
   display: flex;
+}
+
+.wrapper_main_nav{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
 }
 .main_nav_top{
   justify-content: space-between;
-  // border-bottom: 1px solid grey;
+}
+.second_nav_top{
+  margin-top: 65px;
 }
 
 .main_nav_top_content_left, .main_nav_top_content_right{
-  width: 45%;
+  width: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0;
 
@@ -21,7 +32,7 @@
     width: 230px;
   }
   & input{
-    width: 260px;
+    width: 350px;
   }
   & span{
     font-size: 14px;
@@ -56,6 +67,7 @@
   }
 }
 
+// HERO/JUMBOTRON
 .hero{
   background-image: url('../img/hero.jpg');
   // height: calc(100vh - 120px);
@@ -66,8 +78,9 @@
   & .hero_info_top{
     font-family: 'Roboto', sans-serif;
    background-image: url('../img/impronte.png');
-   background-repeat: repeat;
+   background-repeat: repeat-x;
    background-size: cover;
+   background-position: center top;
    position: absolute;
    top: 0;
    left: 0;
@@ -77,8 +90,9 @@
    align-items: center;
    justify-content: space-around;
    color: #fff;
-   background: #cacace;
+   background: rgb(30, 49, 32);
   }
+
   & .hero_info_bottom{
     font-family: 'Roboto', sans-serif;
     position: absolute;
@@ -89,7 +103,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #cacace;
+    background: rgb(30, 49, 32);
 
     img {
       width: 180px;
@@ -110,7 +124,6 @@
         &:hover{
           color: #fff;
         }
-
       }
     }
   }
@@ -135,6 +148,30 @@
     button{
       background: #fff;
       font-size: 14px;
+      &:hover{
+        background: #3d6f42;
+        color: #fff;
+      }
     }
   }
+
+  & .folder, .shopping_cart{
+    position: fixed;
+    right: 15px;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 8px;
+    margin-top: 140px;
+    cursor: pointer;
+  }
+  & .folder{
+    top: 15px;
+  }
+  & .shopping_cart{
+    top: 90px;
+  }
+
 }

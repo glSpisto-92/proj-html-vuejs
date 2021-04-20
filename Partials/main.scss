@@ -44,8 +44,34 @@
 
   & .box_shop{
     width: calc(100% / 3);
-    height: 600px;
     background-image: url('../img/impronte.png');
     background-color: rgb(30, 49, 32);
+    padding: 60px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+
+    h3{
+      color: #fff;
+      font-family: 'Goudy Bookletter 1911', serif;
+      font-size: $fontLarge;
+      letter-spacing: 1px;
+    }
+    h4 {
+      font-family: 'Roboto', sans-serif;
+      color: #3d6f42;
+      font-size: $fontSmall;
+      letter-spacing: 1px;
+    }
+    img{
+      width: 250px;
+    }
+    button{
+      font-size: 16px;
+    }
+
+    &:hover{
+      transform: scale(1.1);
+      filter: brightness(120%);
+    }
   }
 }

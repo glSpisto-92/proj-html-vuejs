@@ -39,4 +39,9 @@
   border: none;
   margin: 5px;
   cursor: pointer;
+
+  &.color{
+    background-color: #3d6f42;
+    color: #fff;
+  }
 }

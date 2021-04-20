@@ -28,6 +28,10 @@
   margin: 5px;
   cursor: pointer;
 }
+.btn.color {
+  background-color: #3d6f42;
+  color: #fff;
+}
 
 .main_nav_top, .second_nav_top {
   font-family: "Roboto", sans-serif;
@@ -231,9 +235,33 @@
 }
 .section_shop_2 .box_shop {
   width: calc(100% / 3);
-  height: 600px;
   background-image: url("../img/impronte.png");
   background-color: #1e3120;
+  padding: 60px;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.section_shop_2 .box_shop h3 {
+  color: #fff;
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+.section_shop_2 .box_shop h4 {
+  font-family: "Roboto", sans-serif;
+  color: #3d6f42;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.section_shop_2 .box_shop img {
+  width: 250px;
+}
+.section_shop_2 .box_shop button {
+  font-size: 16px;
+}
+.section_shop_2 .box_shop:hover {
+  transform: scale(1.1);
+  filter: brightness(120%);
 }
 
 * {

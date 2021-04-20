@@ -14,3 +14,38 @@
     letter-spacing: 1px;
   }
 }
+
+.section_shop_1{
+  display: flex;
+
+  & .box_shop{
+    width: calc(100% / 4);
+    margin: 10px;
+
+    & img{
+      width: 100%;
+    }
+
+    & p{
+      text-align: center;
+      margin-top: 10px;
+      font-size: $fontMedium;
+    }
+  }
+}
+
+.section_shop_2{
+  height: 600px;
+  display: flex;
+
+  #special{
+    margin: 0 10px;
+  }
+
+  & .box_shop{
+    width: calc(100% / 3);
+    height: 600px;
+    background-image: url('../img/impronte.png');
+    background-color: rgb(30, 49, 32);
+  }
+}

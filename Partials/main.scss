@@ -1,1 +1,16 @@
 // MAIN (sezioni varie...)
+// categories title
+.categories_text{
+  text-align: center;
+  max-width: 35%;
+
+  & h2{
+    font-size: $fontMediumL;
+    font-family: 'Goudy Bookletter 1911', serif;
+    letter-spacing: 1px;
+  }
+  & p{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+  }
+}

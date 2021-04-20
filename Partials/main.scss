@@ -140,3 +140,38 @@
     }
   }
 }
+
+.testimonial_wrapper{
+  background-image: url('../img/impronte.png');
+  height: 600px;
+  background-color: rgb(30, 49, 32);
+  background-position: center top;
+  background-repeat: repeat-x;
+  padding: 80px;
+
+  h2{
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: $fontLarge;
+    color: #fff;
+    text-align: center;
+  }
+  .testimonial_content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .testimonial_box{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 2;
+
+    img{
+      width: 120px;
+      border-radius: 50%;
+    }
+  }
+}

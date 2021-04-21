@@ -24,3 +24,17 @@ a, li{
 hr{
   border: 1px solid #e6e6e6;
 }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  font-size: $fontSmall;
+}
+
+h2, h3{
+  font-family: 'Goudy Bookletter 1911', serif;
+  letter-spacing: 1px;
+}
+h2{
+  font-size: $fontLarge;
+}

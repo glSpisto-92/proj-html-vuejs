@@ -72,7 +72,7 @@
   background-size: cover;
   position: relative;
 
-  & .hero_info_top{
+   .hero_info_top{
     font-family: 'Roboto', sans-serif;
    background-image: url('../img/impronte.png');
    background-repeat: repeat;
@@ -85,7 +85,7 @@
    color: #fff;
    background-color: rgb(30, 49, 32);
 
-   & .hero_info_top_text{
+    .hero_info_top_text{
      display: flex;
      justify-content: space-between;
      line-height: 60px;
@@ -111,8 +111,7 @@
       bottom: 0;
       left: 420px;
     }
-    p{
-      font-size: $fontSmall;
+    p {
       color: #fff;
       font-weight: 500;
 
@@ -140,10 +139,7 @@
     }
     h2{
       font-weight: bold;
-      font-size: $fontLarge;
       color: #fff;
-      font-family: 'Goudy Bookletter 1911', serif;
-      letter-spacing: 1px;
     }
     button{
       background: #fff;
@@ -168,10 +164,10 @@
     cursor: pointer;
     box-shadow: 1px 0px 13px 3px #707070;
   }
-  & .folder{
+  .folder{
     top: 25px;
   }
-  & .shopping_cart{
+  .shopping_cart{
     top: 100px;
   }
 }
@@ -191,7 +187,4 @@
       }
     }
   }
-}
-@media screen and (max-width: 768px){
-
 }

@@ -139,7 +139,6 @@
   left: 420px;
 }
 .hero .hero_info_bottom p {
-  font-size: 20px;
   color: #fff;
   font-weight: 500;
 }
@@ -161,16 +160,13 @@
 .hero .hero_text small {
   font-weight: bold;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Goudy Bookletter 1911", serif;
   letter-spacing: 1;
 }
 .hero .hero_text h2 {
   font-weight: bold;
-  font-size: 48px;
   color: #fff;
-  font-family: "Goudy Bookletter 1911", serif;
-  letter-spacing: 1px;
 }
 .hero .hero_text button {
   background: #fff;
@@ -217,15 +213,6 @@
   text-align: center;
   max-width: 35%;
 }
-.categories_text h2 {
-  font-size: 36px;
-  font-family: "Goudy Bookletter 1911", serif;
-  letter-spacing: 1px;
-}
-.categories_text p {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 1px;
-}
 
 .section_shop_1 {
   display: flex;
@@ -242,7 +229,6 @@
   text-align: center;
   margin-top: 10px;
   font-size: 30px;
-  font-family: "Roboto", sans-serif;
 }
 
 .section_shop_2 {
@@ -260,16 +246,13 @@
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
-.section_shop_2 .box_shop h3 {
+.section_shop_2 .box_shop h2 {
   color: #fff;
-  font-family: "Goudy Bookletter 1911", serif;
-  font-size: 48px;
-  letter-spacing: 1px;
 }
 .section_shop_2 .box_shop h4 {
   font-family: "Roboto", sans-serif;
   color: #3d6f42;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 .section_shop_2 .box_shop img {
@@ -299,14 +282,8 @@
   text-align: center;
 }
 .banner_new_arrivals .banner_new_arrivals_content p {
-  font-family: "Roboto", sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
-}
-.banner_new_arrivals .banner_new_arrivals_content h3 {
-  font-family: "Goudy Bookletter 1911", serif;
-  letter-spacing: 2px;
-  font-size: 48px;
 }
 .banner_new_arrivals .banner_new_arrivals_content button:hover {
   background: #3d6f42;
@@ -318,14 +295,8 @@
   justify-content: space-between;
   align-items: center;
 }
-.bestseller_section h3 {
+.bestseller_section p {
   color: #3d6f42;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-}
-.bestseller_section h2 {
-  font-family: "Goudy Bookletter 1911", serif;
-  font-size: 36px;
 }
 
 .bestseller_section_arcticle {
@@ -341,7 +312,6 @@
 }
 .bestseller_section_arcticle .box_shop p {
   margin-top: 15px;
-  font-size: 20px;
   text-align: center;
 }
 
@@ -354,8 +324,6 @@
   padding: 80px;
 }
 .testimonial_wrapper h2 {
-  font-family: "Goudy Bookletter 1911", serif;
-  font-size: 48px;
   color: #fff;
   text-align: center;
 }
@@ -378,7 +346,7 @@
   width: 120px;
   border-radius: 50%;
 }
-.testimonial_wrapper .testimonial_box h3 {
+.testimonial_wrapper .testimonial_box h4 {
   color: rgba(255, 255, 255, 0.56);
   margin-top: 20px;
 }
@@ -393,22 +361,25 @@
 .newsletter_wrapper .newsletter_content {
   width: 50%;
 }
-.newsletter_wrapper .newsletter_content h2 {
-  font-size: 48px;
-  font-family: "Goudy Bookletter 1911", serif;
-}
-.newsletter_wrapper .newsletter_content p {
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 1px;
-}
 .newsletter_wrapper .newsletter_content input {
   width: 350px;
   height: 50px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .newsletter_wrapper .newsletter_content button {
   height: 50px;
+}
+
+.recent-arcticles_wrapper {
+  text-align: center;
+}
+.recent-arcticles_wrapper h2 {
+  font-family: "Goudy Bookletter 1911", serif;
+  letter-spacing: 1px;
+}
+.recent-arcticles_wrapper p {
+  color: #3d6f42;
 }
 
 * {
@@ -456,4 +427,19 @@ a, li {
 
 hr {
   border: 1px solid #e6e6e6;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+h2, h3 {
+  font-family: "Goudy Bookletter 1911", serif;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 48px;
 }

@@ -375,7 +375,6 @@
   text-align: center;
 }
 .recent-arcticles_wrapper h2 {
-  font-family: "Goudy Bookletter 1911", serif;
   letter-spacing: 1px;
 }
 .recent-arcticles_wrapper p {
@@ -396,6 +395,29 @@
 .recent-arcticles_wrapper .recent_arcticle_content p {
   margin-top: 25px;
   color: #000;
+}
+
+.others_food_wrapper {
+  display: flex;
+}
+.others_food_wrapper .dog_food_wrapper, .others_food_wrapper .cat_food_wrapper {
+  width: 50%;
+  height: 500px;
+  background-size: cover;
+}
+.others_food_wrapper .dog_food_wrapper {
+  background-image: url("../img/banner-cane.jpg");
+}
+.others_food_wrapper .cat_food_wrapper {
+  background-image: url("../img/banner-gatto.jpg");
+}
+
+.info_shop_wrapper {
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/impronte.png");
+  background-color: #1e3120;
+  background-repeat: repeat;
 }
 
 * {

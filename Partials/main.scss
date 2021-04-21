@@ -187,7 +187,6 @@
   text-align: center;
 
   h2{
-    font-family: 'Goudy Bookletter 1911', serif;
     letter-spacing: 1px;
   }
   p{
@@ -212,4 +211,28 @@
       color: #000;
     }
   }
+}
+
+.others_food_wrapper{
+  display: flex;
+
+  .dog_food_wrapper, .cat_food_wrapper{
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+  }
+  .dog_food_wrapper{
+    background-image: url('../img/banner-cane.jpg');
+  }
+  .cat_food_wrapper{
+    background-image: url('../img/banner-gatto.jpg');
+  }
+}
+
+.info_shop_wrapper{
+  height: 300px;
+  width: 100%;
+  background-image: url('../img/impronte.png');
+  background-color: rgb(30, 49, 32);
+  background-repeat: repeat;
 }

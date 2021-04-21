@@ -193,4 +193,23 @@
   p{
     color: #3d6f42;
   }
+
+  .recent_arcticle_content{
+    display: flex;
+    width: 100%;
+
+    .box_shop{
+      width: calc((100% / 4) - 30px);
+      margin: 15px;
+      cursor: pointer;
+    }
+
+    img{
+      width: 100%;
+    }
+    p{
+      margin-top: 25px;
+      color: #000;
+    }
+  }
 }

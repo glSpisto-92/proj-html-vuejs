@@ -381,6 +381,22 @@
 .recent-arcticles_wrapper p {
   color: #3d6f42;
 }
+.recent-arcticles_wrapper .recent_arcticle_content {
+  display: flex;
+  width: 100%;
+}
+.recent-arcticles_wrapper .recent_arcticle_content .box_shop {
+  width: calc((100% / 4) - 30px);
+  margin: 15px;
+  cursor: pointer;
+}
+.recent-arcticles_wrapper .recent_arcticle_content img {
+  width: 100%;
+}
+.recent-arcticles_wrapper .recent_arcticle_content p {
+  margin-top: 25px;
+  color: #000;
+}
 
 * {
   margin: 0;

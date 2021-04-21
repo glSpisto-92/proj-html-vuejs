@@ -233,6 +233,7 @@
 .section_shop_1 .box_shop {
   width: calc(100% / 4);
   margin: 10px;
+  cursor: pointer;
 }
 .section_shop_1 .box_shop img {
   width: 100%;
@@ -241,6 +242,7 @@
   text-align: center;
   margin-top: 10px;
   font-size: 30px;
+  font-family: "Roboto", sans-serif;
 }
 
 .section_shop_2 {
@@ -256,6 +258,7 @@
   padding: 60px;
   text-align: center;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .section_shop_2 .box_shop h3 {
   color: #fff;
@@ -331,6 +334,7 @@
 }
 .bestseller_section_arcticle .box_shop {
   margin: 15px;
+  cursor: pointer;
 }
 .bestseller_section_arcticle .box_shop img {
   width: 300px;
@@ -343,7 +347,7 @@
 
 .testimonial_wrapper {
   background-image: url("../img/impronte.png");
-  height: 600px;
+  max-height: 100%;
   background-color: #1e3120;
   background-position: center top;
   background-repeat: repeat-x;
@@ -358,6 +362,7 @@
 .testimonial_wrapper .testimonial_content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .testimonial_wrapper .testimonial_box {
   width: 300px;
@@ -367,10 +372,43 @@
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
   line-height: 2;
+  margin-bottom: 100px;
 }
 .testimonial_wrapper .testimonial_box img {
   width: 120px;
   border-radius: 50%;
+}
+.testimonial_wrapper .testimonial_box h3 {
+  color: rgba(255, 255, 255, 0.56);
+  margin-top: 20px;
+}
+
+.newsletter_wrapper {
+  height: 500px;
+  background-image: url("../img/banner-newsletter.jpg");
+  background-size: cover;
+  margin-top: -100px;
+  padding: 100px;
+}
+.newsletter_wrapper .newsletter_content {
+  width: 50%;
+}
+.newsletter_wrapper .newsletter_content h2 {
+  font-size: 48px;
+  font-family: "Goudy Bookletter 1911", serif;
+}
+.newsletter_wrapper .newsletter_content p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+}
+.newsletter_wrapper .newsletter_content input {
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+}
+.newsletter_wrapper .newsletter_content button {
+  height: 50px;
 }
 
 * {

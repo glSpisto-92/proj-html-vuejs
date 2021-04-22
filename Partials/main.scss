@@ -37,7 +37,7 @@
   .box_shop{
     width: calc(100% / 3);
     background-image: url('../img/impronte.png');
-    background-color: rgb(30, 49, 32);
+    background-color: $backgroundRGB;
     padding: 60px;
     text-align: center;
     transition: all 0.5s ease-in-out;
@@ -84,7 +84,7 @@
       letter-spacing: 3px;
     }
     button:hover{
-      background: #3d6f42;
+      background: $secondColorGreen;
       color: #fff;
     }
   }
@@ -123,7 +123,7 @@
 .testimonial_wrapper{
   background-image: url('../img/impronte.png');
   max-height: 100%;
-  background-color: rgb(30, 49, 32);
+  background-color: $backgroundRGB;
   background-position: center top;
   background-repeat: repeat-x;
   padding: 80px;
@@ -248,7 +248,7 @@
   height: 300px;
   width: 100%;
   background-image: url('../img/impronte.png');
-  background-color: rgb(30, 49, 32);
+  background-color: $backgroundRGB;
   background-repeat: repeat;
   display: flex;
   justify-content: center;

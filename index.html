@@ -290,21 +290,15 @@
             <p class="mt-30">1234 Avada Avenue Avadaville info@your-company.com <br> Call us: (1) 234 5678</p>
           </div>
           <div class="box_footer">
-            <h3>Shop my brand</h3>
-            <ul>
-              <li><a href="#">ciao</a></li>
-              <li><a href="#">ciao</a></li>
-              <li><a href="#">ciao</a></li>
-              <li><a href="#">ciao</a></li>
+            <h3>Shop by brand</h3>
+            <ul v-for="item in shopByBrand">
+              <li><a href="#">{{item}}</a></li>
             </ul>
           </div>
           <div class="box_footer">
             <h3>Useful links</h3>
-            <ul>
-              <li><a href="#">ciao</a></li>
-              <li><a href="#">ciao</a></li>
-              <li><a href="#">ciao</a></li>
-              <li><a href="#">ciao</a></li>
+            <ul v-for="item in usefulLinks">
+              <li><a href="#">{{item}}</a></li>
             </ul>
           </div>
           <div class="box_footer subscribe_footer">
@@ -317,12 +311,14 @@
 
       <div class="footer_menu">
         <!-- footer menu list -->
+        <!-- <ul v-for="pippo in menuBottom" class="menu_list_footer">
+          <li><a href="#">{{pippo}}</a></li>
+        </ul> -->
         <ul class="menu_list_footer">
-          <li><a href="#">ciao</a></li>
-          <li><a href="#">ciao</a></li>
-          <li><a href="#">ciao</a></li>
-          <li><a href="#">ciao</a></li>
-          <li><a href="#">ciao</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
         <!--footer social list -->
         <ul class="social_list_footer">

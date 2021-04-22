@@ -215,11 +215,26 @@
 
 .others_food_wrapper{
   display: flex;
+  text-align: center;
 
   .dog_food_wrapper, .cat_food_wrapper{
     width: 50%;
     height: 500px;
     background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    transition: transform .35s,border-color 0s linear .35s;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+
+    .box_shop{
+      @include image_centered2;
+    }
+  }
+
+  .dog_food_wrapper:hover, .cat_food_wrapper:hover{
+    transform: perspective(1000px) scale(1.1);
   }
   .dog_food_wrapper{
     background-image: url('../img/banner-cane.jpg');
@@ -235,4 +250,20 @@
   background-image: url('../img/impronte.png');
   background-color: rgb(30, 49, 32);
   background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .info_box {
+    margin: 50px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.67);
+
+    img {
+      width: 70px;
+    }
+    p{
+      margin-top: 15px;
+    }
+  }
 }
